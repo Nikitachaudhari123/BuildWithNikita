@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Computer Engineering Technologist</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="layout">
+    <!-- Left sidebar: sticky profile card -->
+    <aside class="sidebar profile-card" data-sidebar>
+      <div class="profile-card-inner">
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-2.png" alt="Profile" width="120" height="120">
+        </figure>
+        <h1 class="profile-name">Nikita Chaudhari</h1>
+        <p class="profile-title">Computer Engineering Technologist</p>
+        <p class="profile-focus">Systems &amp; Security Track</p>
+
+        <div class="separator accent"></div>
+
+        <ul class="profile-contacts">
+          <li class="profile-contact-item">
+            <span class="contact-label">Location</span>
+            <address class="contact-value">Ottawa, ON, Canada</address>
+          </li>
+          <li class="profile-contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:nc203412@gmail.com" class="contact-value link">nc203412@gmail.com</a>
+          </li>
+          <li class="profile-contact-item">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/Nikitachaudhari123" target="_blank" rel="noopener" class="contact-value link">github.com/Nikitachaudhari123</a>
+          </li>
+          <li class="profile-contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/nikitachaudhari7170" target="_blank" rel="noopener" class="contact-value link">LinkedIn</a>
+          </li>
+          <li class="profile-contact-item">
+            <span class="contact-label">Google Certificate</span>
+            <a href="https://coursera.org/share/ff0e0dd8b1879dd0f45588fc5ed5ce2b" target="_blank" rel="noopener" class="contact-value link">View certificate</a>
+          </li>
+        </ul>
+
+        <a href="./assets/pdf/Nikita-Chaudhari.pdf" class="btn btn-resume" download>
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Download Resume</span>
+        </a>
+      </div>
+      <button class="sidebar-toggle" data-sidebar-btn aria-label="Toggle contacts">
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </aside>
+
+    <!-- Right content panels -->
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+      <!-- About / Hero -->
+      <article class="panel about active" data-page="about">
+        <header class="panel-header">
+          <span class="panel-accent"></span>
+          <h2 class="h2 article-title">About</h2>
+        </header>
+        <section class="about-hero">
+          <p class="about-lead">
+            Computer Engineering Technology graduate focused on systems, networking, and secure software design. Experienced across real-time systems, cloud applications, and full-stack development. I build reliable, testable systems and approach projects with a security-first mindset. Currently targeting infrastructure, systems support, and junior security roles while deepening specialization in cybersecurity.
+          </p>
+        </section>
+
+        <!-- Skills: 4 groups with skill bars -->
+        <section class="skills-grid">
+          <div class="skill-card">
+            <h3 class="skill-card-title">Systems &amp; Embedded</h3>
+            <ul class="skill-tags">
+              <li>QNX Neutrino</li>
+              <li>C/C++</li>
+              <li>RTOS resource managers</li>
+              <li>Threads, mutex, IPC</li>
+              <li>Microcontroller labs</li>
+            </ul>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">Networking &amp; Infrastructure</h3>
+            <ul class="skill-tags">
+              <li>TCP/IP, DNS, Routing</li>
+              <li>Cisco Packet Tracer</li>
+              <li>Wireshark packet analysis</li>
+              <li>Linux administration</li>
+              <li>Shell scripting</li>
+            </ul>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">Development &amp; Cloud</h3>
+            <ul class="skill-tags">
+              <li>Python, Java, Node.js</li>
+              <li>REST APIs · FastAPI / Express</li>
+              <li>AWS EC2 + Docker</li>
+              <li>Git + CI workflows</li>
+            </ul>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 82%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">Data &amp; AI Integration</h3>
+            <ul class="skill-tags">
+              <li>KNN estimation</li>
+              <li>Anomaly detection</li>
+              <li>ML API integration</li>
+              <li>Data preprocessing</li>
+            </ul>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 70%;"></div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Resume: Education + Experience timeline -->
+      <article class="panel resume" data-page="resume">
+        <header class="panel-header">
+          <span class="panel-accent"></span>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="resume-subsection">
+          <h3 class="resume-subsection-title">
+            <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+            Education
+          </h3>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <h4 class="h4 timeline-item-title">Computer Engineering Technology</h4>
+              <span class="timeline-date">Algonquin College</span>
+              <p class="timeline-text">Degree / Diploma — Systems &amp; Security track. Coursework in networking, embedded systems, and secure software design.</p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <h4 class="h4 timeline-item-title">Google IT Support Professional Certificate</h4>
+              <span class="timeline-date">Coursera — Completed</span>
+              <p class="timeline-text">IT fundamentals, troubleshooting, networking, and system administration.</p>
+              <a href="https://coursera.org/share/ff0e0dd8b1879dd0f45588fc5ed5ce2b" target="_blank" rel="noopener" class="timeline-link">View certificate</a>
+            </li>
+          </ol>
+        </section>
+
+        <section class="resume-subsection">
+          <h3 class="resume-subsection-title">
+            <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+            Experience
+          </h3>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <span class="timeline-dot"></span>
+              <h4 class="h4 timeline-item-title">Projects &amp; Academic Work</h4>
+              <span class="timeline-date">Ongoing</span>
+              <p class="timeline-text">Full-stack and REST applications, QNX resource managers, AI/ML integration projects. Targeting infrastructure, systems support, and junior security roles.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <!-- Portfolio: Featured projects -->
+      <article class="panel portfolio" data-page="portfolio">
+        <header class="panel-header">
+          <span class="panel-accent"></span>
+          <h2 class="h2 article-title">Featured Projects</h2>
+        </header>
+        <section class="projects-grid">
+          <article class="project-card" data-project-card>
+            <div class="project-card-image">
+              <img src="./assets/images/project-1.jpg" alt="AI Job Tracker" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">AI Job Tracker Web Application</h3>
+              <a href="https://github.com/Nikitachaudhari123/AiJobApplicationTracker" target="_blank" rel="noopener" class="project-card-github">GitHub →</a>
+              <p class="project-card-stack">Node.js · Express · MySQL · JWT · AI API · REST</p>
+              <p class="project-card-summary">Full-stack job application tracking platform with AI-assisted job description parsing, secure authentication, and audit logging.</p>
+              <ul class="project-card-bullets">
+                <li>Secure JWT auth (register/login) with protected API routes</li>
+                <li>Relational MySQL schema, optimized CRUD + query logic</li>
+                <li>AI API integration to parse job descriptions and extract structured fields</li>
+              </ul>
+              <div class="project-card-details" data-project-details>
+                <p>Built full-stack web platform to manage and track job applications and company records. Implemented audit trail logging for user and data change events. Used Git branching and pull request workflow for feature delivery.</p>
+                <p class="project-signals"><strong>Key signals:</strong> Auth · DB design · AI integration · API security · production patterns</p>
+              </div>
+              <button type="button" class="project-toggle" data-project-toggle aria-expanded="false">Show more</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project-card>
+            <div class="project-card-image">
+              <img src="./assets/images/project-2.png" alt="Vet Clinic REST" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Vet Clinic REST Web Application</h3>
+              <a href="https://github.com/Nikitachaudhari123/Vet-Clinic-System-using-.net/tree/main" target="_blank" rel="noopener" class="project-card-github">GitHub →</a>
+              <p class="project-card-stack">C# · .NET · REST · Azure · JavaScript</p>
+              <p class="project-card-summary">Layered REST application for clinic record management with validated services and persistent storage.</p>
+              <ul class="project-card-bullets">
+                <li>RESTful services and CRUD endpoints using C# and .NET</li>
+                <li>Layered architecture and OOP design patterns</li>
+                <li>Database persistence and server-side validation</li>
+              </ul>
+              <div class="project-card-details" data-project-details>
+                <p>Built hookup JavaScript client for API consumption. Executed functional and API endpoint testing. Deployed components in Azure for cloud exposure.</p>
+                <p class="project-signals"><strong>Key signals:</strong> REST design · layered architecture · validation · cloud exposure</p>
+              </div>
+              <button type="button" class="project-toggle" data-project-toggle aria-expanded="false">Show more</button>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact" data-project-card>
+            <div class="project-card-image">
+              <img src="./assets/images/project-3.jpg" alt="QNX Resource Manager" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">QNX Resource Manager</h3>
+              <p class="project-card-stack">C, QNX, IPC, Threads</p>
+              <ul class="project-card-bullets">
+                <li>Multi-threaded resource manager with pulse messaging</li>
+                <li>Synchronization and fault isolation controls</li>
+                <li>Tested with scripted acceptance scenarios</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact" data-project-card>
+            <div class="project-card-image">
+              <img src="./assets/images/project-4.png" alt="AI Temperature Monitoring" loading="lazy">
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">AI Temperature Monitoring</h3>
+              <p class="project-card-stack">Python, ML, KNN, REST</p>
+              <ul class="project-card-bullets">
+                <li>Missing-data estimation using KNN</li>
+                <li>Anomaly detection for sensor streams</li>
+                <li>Prediction endpoints via API</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </article>
+
+      <!-- Contact -->
+      <article class="panel contact" data-page="contact">
+        <header class="panel-header">
+          <span class="panel-accent"></span>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="contact-actions">
+          <a href="mailto:nc203412@gmail.com" class="btn btn-primary">
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nikitachaudhari7170" target="_blank" rel="noopener" class="btn btn-outline">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Nikitachaudhari123" target="_blank" rel="noopener" class="btn btn-outline">
+            <ion-icon name="logo-github"></ion-icon>
+            <span>GitHub</span>
+          </a>
+          <a href="./assets/pdf/Nikita-Chaudhari.pdf" class="btn btn-outline" download>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Resume</span>
+          </a>
+        </section>
+        <section class="contact-form-section">
+          <h3 class="contact-form-title">Contact Form</h3>
+          <form class="contact-form" action="#" method="post" data-contact-form>
+            <div class="contact-form-row-group">
+              <div class="contact-form-row">
+                <label class="contact-form-label" for="contact-name">Full name</label>
+                <input type="text" id="contact-name" name="name" class="contact-form-input" placeholder="Full name" required>
+              </div>
+              <div class="contact-form-row">
+                <label class="contact-form-label" for="contact-email">Email address</label>
+                <input type="email" id="contact-email" name="email" class="contact-form-input" placeholder="Email address" required>
+              </div>
+            </div>
+            <div class="contact-form-row">
+              <label class="contact-form-label" for="contact-message">Your Message</label>
+              <textarea id="contact-message" name="message" class="contact-form-input contact-form-textarea" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary contact-form-submit">
+              <ion-icon name="send-outline"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-credit" role="contentinfo">
+    <p>Design inspired by <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener">vCard by Code With Sadee</a></p>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
