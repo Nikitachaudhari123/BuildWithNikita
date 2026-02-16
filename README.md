@@ -2,7 +2,7 @@
 
 A responsive personal portfolio site for **Nikita Chaudhari**, Computer Engineering Technologist (Systems & Security). Built with HTML, CSS, and JavaScript.
 
-**Live site:** [View on GitHub Pages](https://nikitachaudhari123.github.io/vcard-personal-portfolio/) *(enable Pages in your repo settings to see it)*
+**Live site:** [View on GitHub Pages]( https://nikitachaudhari123.github.io/BuildWithNikita/) 
 
 ---
 
