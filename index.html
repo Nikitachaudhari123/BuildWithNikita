@@ -67,7 +67,7 @@
         <ul class="navbar-list">
           <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Project</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
       </nav>
@@ -184,8 +184,8 @@
         </section>
       </article>
 
-      <!-- Portfolio: Featured projects -->
-      <article class="panel portfolio" data-page="portfolio">
+      <!-- Project: Featured projects -->
+      <article class="panel project" data-page="project">
         <header class="panel-header">
           <span class="panel-accent"></span>
           <h2 class="h2 article-title">Featured Projects</h2>
@@ -235,33 +235,39 @@
             </div>
           </article>
 
-          <article class="project-card project-card-compact" data-project-card>
+          <article class="project-card" data-project-card>
             <div class="project-card-image">
-              <img src="./assets/images/project-3.jpg" alt="QNX Resource Manager" loading="lazy">
+              <img src="./assets/images/project-monitor.jpg" alt="Cloud Monitoring Platform" loading="lazy">
             </div>
             <div class="project-card-body">
-              <h3 class="project-card-title">QNX Resource Manager</h3>
-              <p class="project-card-stack">C, QNX, IPC, Threads</p>
+              <h3 class="project-card-title">Cloud-Based Real-Time Monitoring Platform</h3>
+              <a href="https://github.com/YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="project-card-github">GitHub →</a>
+              <a href="http://18.224.171.13" target="_blank" rel="noopener" class="project-card-github">Live Demo →</a>
+              <p class="project-card-stack">C++ · Linux · AWS EC2 · Amazon RDS · Node.js · Express · Nginx · Chart.js</p>
+              <p class="project-card-summary">
+                Production-style cloud monitoring system that collects low-level Linux system metrics in C++, stores them securely in AWS RDS, and visualizes live performance data through a REST API and interactive dashboard.
+              </p>
               <ul class="project-card-bullets">
-                <li>Multi-threaded resource manager with pulse messaging</li>
-                <li>Synchronization and fault isolation controls</li>
-                <li>Tested with scripted acceptance scenarios</li>
+                <li>Developed C++ system-level monitoring service reading <code>/proc</code> to compute CPU, memory, and disk utilization every 5 seconds</li>
+                <li>Integrated SSL-secured PostgreSQL (Amazon RDS) with structured schema for persistent metric logging</li>
+                <li>Built RESTful API (Node.js + Express) exposing real-time endpoints (<code>/api/metrics/now</code>, <code>/api/metrics/latest</code>)</li>
+                <li>Configured Nginx reverse proxy for production-style deployment and secure networking</li>
+                <li>Implemented live Chart.js dashboard with auto-refresh visualization pipeline</li>
               </ul>
-            </div>
-          </article>
-
-          <article class="project-card project-card-compact" data-project-card>
-            <div class="project-card-image">
-              <img src="./assets/images/project-4.png" alt="AI Temperature Monitoring" loading="lazy">
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">AI Temperature Monitoring</h3>
-              <p class="project-card-stack">Python, ML, KNN, REST</p>
-              <ul class="project-card-bullets">
-                <li>Missing-data estimation using KNN</li>
-                <li>Anomaly detection for sensor streams</li>
-                <li>Prediction endpoints via API</li>
-              </ul>
+              <div class="project-card-details" data-project-details>
+                <p>
+                  Designed and deployed a multi-tier cloud architecture on AWS EC2, demonstrating full infrastructure ownership from system-level data collection to public-facing visualization. Configured environment variables, SSL database connectivity, and AWS Security Groups for secure access control.
+                </p>
+                <p>
+                  The system establishes a real-time data pipeline:
+                  <strong>Linux metrics → C++ service → Amazon RDS → REST API → Nginx proxy → Browser dashboard</strong>.
+                  Built with production deployment patterns including reverse proxy routing, service orchestration, and network isolation.
+                </p>
+                <p class="project-signals">
+                  <strong>Key signals:</strong> Systems programming · Cloud deployment · REST architecture · Reverse proxy configuration · Secure DB integration · Real-time visualization · Infrastructure management
+                </p>
+              </div>
+              <button type="button" class="project-toggle" data-project-toggle aria-expanded="false">Show more</button>
             </div>
           </article>
         </section>
